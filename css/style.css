@@ -1,0 +1,75 @@
+/* general --------------------------------------*/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+a,a:hover
+{
+    text-decoration: none;
+}
+
+.container-fluid
+{
+    padding:0;
+}
+
+  
+/* header  --------------------------------------*/
+
+.header 
+{
+    background-color: #3E4E59;
+    height: 80px;
+    line-height: 70px;
+}
+
+.Pronostik
+{
+    color: #F1F0E2;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    float: left;
+    pointer-events: none;
+	cursor: default;
+}
+
+.nav
+{
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav a
+{
+    color: #D9BB93;
+}
+
+.nav a:hover
+{
+    color: #D9BB93;
+
+}
+
+
+
+/* ------image-------- */
+
+
+.main-img
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+img 
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+
