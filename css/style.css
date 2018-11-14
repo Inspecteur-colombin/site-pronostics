@@ -1,75 +1,86 @@
-/* general --------------------------------------*/
+/* -------------------------------------------------------- general ------------------------------------------------------ */
+
+
 body
 {
+    font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* ---------------------------------------------------------------header-------------------------------------------------- */
+
+header
+{
+    
+    background-color: #;
+    border-bottom: 2px solid #D9BB93;
+    height: auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+header i.icon
+{
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 10;
+}
+
+header .logo h2
+{
+     color: #D9BB93;
+     margin-top: 10px;
+}
+
+header nav .nav-list
+{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
     margin: 0;
-    padding: 0;
-    font-family: 'Montserrat';
 }
 
-a,a:hover
+header nav .nav-list .list a
 {
+    color:#D9BB93;
+    display: block;
+    padding: 10px;
+    margin: 5px;
     text-decoration: none;
+    transition:all 0.3s ease-in-out;
 }
 
-.container-fluid
-{
-    padding:0;
-}
-
-  
-/* header  --------------------------------------*/
-
-.header 
-{
-    background-color: #3E4E59;
-    height: 80px;
-    line-height: 70px;
-}
-
-.Pronostik
+header nav .nav-list .list a:hover
 {
     color: #F1F0E2;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    float: left;
-    pointer-events: none;
-	cursor: default;
 }
 
-.nav
+/* -------------------------mobile header------------------------------- */
+
+
+@media (max-width:767px){
+
+header .logo h2
 {
-    height: 50px;
-    width: 100%;
-    max-width: 100%;
+    text-align: center;
 }
 
-.nav a
+header nav .nav-list
 {
-    color: #D9BB93;
+    display: block;
+    text-align: center;
+    padding: 0;
 }
 
-.nav a:hover
+header i.icon
 {
-    color: #D9BB93;
+    display: block;
+}
+
 
 }
 
 
 
-/* ------image-------- */
-
-
-.main-img
-{
-    width: 100%;
-    max-width: 100%;
-}
-
-img 
-{
-    width: 100%;
-    max-width: 100%;
-}
-
-
+/* -------------------------------------------------------------- fin du header ------------------------------------------------------------- */
