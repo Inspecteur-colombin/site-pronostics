@@ -3,19 +3,40 @@
 
 body
 {
-    font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.2)
+}
+
+.orange
+{
+    color: #D98D2C;
 }
 
 /* ---------------------------------------------------------------header-------------------------------------------------- */
 
+
 header
 {
     
-    background-color: #;
-    border-bottom: 2px solid #D9BB93;
+    background-color: #3E4E59;
+    background: linear-gradient(#3E4E59,#F1F0E2 800px);
+    border-bottom: 2px solid #D98D2C;
     height: auto;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.9;
 }
 
 header i.icon
@@ -29,7 +50,7 @@ header i.icon
 
 header .logo h2
 {
-     color: #D9BB93;
+     color: #F1F0E2;
      margin-top: 10px;
 }
 
@@ -43,7 +64,7 @@ header nav .nav-list
 
 header nav .nav-list .list a
 {
-    color:#D9BB93;
+    color:#F1F0E2;
     display: block;
     padding: 10px;
     margin: 5px;
@@ -53,10 +74,10 @@ header nav .nav-list .list a
 
 header nav .nav-list .list a:hover
 {
-    color: #F1F0E2;
+    color: #D98D2C;
 }
 
-/* -------------------------mobile header------------------------------- */
+/* ------------mobile header----------------- */
 
 
 @media (max-width:767px){
@@ -68,7 +89,7 @@ header .logo h2
 
 header nav .nav-list
 {
-    display: block;
+    display: none;
     text-align: center;
     padding: 0;
 }
@@ -82,5 +103,124 @@ header i.icon
 }
 
 
-
 /* -------------------------------------------------------------- fin du header ------------------------------------------------------------- */
+
+
+
+
+/* ----------------------------------------------------------------------home------------------------------------------------------------------ */
+
+
+.home
+{
+    height: 600px;
+    background-image: url(../ressources/images/main-img.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.home .home-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.home .home-title
+{
+    color: #F1F0E2;
+    font-size: 40px;
+    margin-bottom: 20px; 
+    text-transform: uppercase;
+}
+
+.home button
+{
+    background: #D98D2C ;
+    color: #F1F0E2 ;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    
+}
+
+/* ------------mobile home----------------- */
+
+@media (max-width:767px){
+
+.home .home-title
+    {
+        font-size: 30px;
+    }
+
+}
+
+
+/* ----------------------------------------------------------------fin du home------------------------------------------------------------------ */
+
+/* -----------------------------------------------------------Faites nous confiance------------------------------------------------------------------ */
+
+.confiance
+{
+    padding-top: 20px;
+}
+
+.title-confiance
+{
+    text-align: center;
+    font-size:  40px;
+    text-transform: uppercase;
+
+}
+
+.line
+{
+    width: 250px;
+    background-color: darkgray;
+    height: 3px; 
+    margin: auto;
+}
+
+.line span
+{
+    display: block;
+    width: 200px;
+    height: 5px;
+    background-color: #D98D2C;
+    margin: auto;
+    position: relative;
+    bottom: 0.6px;
+}
+
+
+.confiance-header p
+{
+    
+    margin: 30px auto;
+    line-height: 1.5;
+}
+
+.confiance-caroussel
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+
+/* ------------mobile confiance----------------- */
+
+@media (max-width:767px){
+
+.img-confiance
+{
+    height: 70px;
+    width: 70px;
+    justify-content: space-between;
+}
+    
+    
+    }
