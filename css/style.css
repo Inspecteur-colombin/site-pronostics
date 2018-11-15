@@ -1,10 +1,15 @@
 /* -------------------------------------------------------- general ------------------------------------------------------ */
-
+html
+{
+    padding: 0;
+    margin: 0;
+}
 
 body
 {
     font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0;
+    margin: 0;
 }
 
 .overlay
@@ -28,8 +33,12 @@ body
     color: #F1F0E2 ;
     padding: 10px;
     text-align: center;
-    width: 150px;
-    
+    width: 150px;   
+}
+
+.bold
+{
+    font-weight: bold;
 }
 /* ------------------------------------------------------------------ fin general ---------------------------------------------------------------- */
 
@@ -191,6 +200,7 @@ header i.icon
     text-align: center;
     font-size:  40px;
     text-transform: uppercase;
+    padding: 20px;
 
 }
 
@@ -216,9 +226,10 @@ header i.icon
 
 .confiance-header p
 {
-    
     margin: 30px auto;
     line-height: 1.5;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .confiance-caroussel
@@ -226,6 +237,7 @@ header i.icon
     display: flex;
     justify-content: space-around;
     margin: 40px;
+    padding-bottom: 40px;
 }
 
 
@@ -239,18 +251,83 @@ header i.icon
     width: 70px;
     justify-content: space-between;
 }
-    
-    
+
+
+.title-confiance
+{
+    text-align: center;
+    font-size:  40px;
+    text-transform: uppercase;
+    padding: 0px;
+
+}
+
+.confiance-header p
+{
+    margin: 30px auto;
+    line-height: 1.5;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.confiance-caroussel
+{
+    margin: auto; 
+    padding-bottom: 30px;
+}
+
+
+
 }
 
 /* -----------------------------------------------------------fin Faites nous confiance------------------------------------------------------------------ */
+
+/* ----------------------------------------------------------------------bankroll---------------------------------------------------------------------- */
+
+.bankroll
+{
+    background-color: #3E4E59;
+    background: linear-gradient(#3E4E59,darkgray 800px);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.bankroll h1
+{
+    padding: 10px;
+    text-transform:uppercase;
+    color: #D98D2C;
+}
+
+.bankroll p
+{
+    padding: 10px;
+    color: #F1F0E2;
+}
+
+
+
+/* ------------mobile bankroll----------------- */
+
+
+.bankroll-img
+{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+
+/* ----------------------------------------------------------------------fin bankroll---------------------------------------------------------------------- */
 
 /* ----------------------------------------------------------------------snapchat---------------------------------------------------------------------- */
 
 .snapchat
 {
-    margin-top: 150px;
     display: flex;
+    margin-top: 40px;
 }
 
 .text-snap
@@ -269,6 +346,7 @@ header i.icon
 .text-snap p
 {
     margin-top: 70px;
+    color: #3E4E59;
 }
 
 .dark
@@ -288,7 +366,6 @@ header i.icon
 
 .snapchat
     {
-        margin-top: 50px;
         display: flex;
         height: 150px;
     }
@@ -329,6 +406,24 @@ header i.icon
 
 
 }
+
+
+/* ------------------------------------------------------------------fin snapchat---------------------------------------------------------------------- */
+
+.footer{
+    color: white;
+    border-top: 8px solid #D98D2C;
+    background-color: #D98D2C;
+    background: linear-gradient(20deg,#3E4E59,#3E4E59,#3E4E59);
+    background-size: 1000% 1000%;   
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 /* ------------------------------------------------------------------fin snapchat---------------------------------------------------------------------- */
