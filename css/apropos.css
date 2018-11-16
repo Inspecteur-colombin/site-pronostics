@@ -1,0 +1,15 @@
+header
+{
+    position: relative;
+}
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('http://maybusch.com/wp-content/uploads/2017/09/businessman-businesswoman-shaking-hands.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+
