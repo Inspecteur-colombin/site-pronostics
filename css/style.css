@@ -33,8 +33,17 @@ body
     color: #F1F0E2 ;
     padding: 10px;
     text-align: center;
-    width: 150px;   
+    width: 150px; 
+    text-decoration: none;
+    list-style: none;  
 }
+
+.button a:hover
+{
+    text-decoration: none;
+    list-style: none;
+}
+
 
 .bold
 {
@@ -154,6 +163,11 @@ header i.icon
     text-transform: uppercase;
 }
 
+.home button a 
+{
+    text-decoration: none;
+    list-style: none;
+}
 
 
 /* ------------mobile home----------------- */
